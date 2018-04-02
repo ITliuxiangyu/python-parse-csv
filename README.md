@@ -17,7 +17,7 @@ def readCsvIntoDb():
                 age = data["age"][i]
                 userId = str(data["userid"][i])
 
-                conn = pymysql.(host = "39.106.19.54" , port = 3306 , user = "root" , password = "12345678" , database = "yyy" , charset = "utf8")
+                conn = pymysql.(host = "******" , port = 3306 , user = "root" , password = "12345678" , database = "yyy" , charset = "utf8")
                 cursor=conn.cursor() 
                 sqlStr = 'INSERT INTO chenyunfei (username,age,userid) VALUES ("%s","%s","%s")' % (username , age , userId)
                 cursor.execute(sqlStr)
